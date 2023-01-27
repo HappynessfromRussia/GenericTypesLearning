@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -32,6 +33,18 @@ public class Main {
             }
         }
 
+        ArrayList numbers = new ArrayList<>(); // по умолчанию сохраняет Object
 
+        for (int i = 0; i < 10; i++){
+            numbers.add(i*10);
+
+        }
+
+
+        int sum = 0;
+        for (Object o : numbers){
+            sum = sum + (Integer) o;
+        }
+        System.out.println(sum);
     }
 }
