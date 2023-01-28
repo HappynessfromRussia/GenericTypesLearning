@@ -3,6 +3,12 @@ package CostomGinericTypes;
 public class Account<T> implements Accountable<T> {
     private T id;
     private int sum;
+    private Object smth;
+
+    public <S> Account(T id, int sum, S smth){
+        this(id, sum);
+        this.smth = smth;
+    }
 
     public Account(T id, int sum) {
         this.id = id;
