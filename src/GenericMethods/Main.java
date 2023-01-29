@@ -11,6 +11,6 @@ public class Main {
         printer.<Integer>print(integers);
 
 
-        Account<Integer> acc3 = new Account<>(13000, 100, "Something");
+        Account<Integer> acc3 = new Account(13000, 100, "Something");
     }
 }
